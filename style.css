@@ -65,3 +65,85 @@ nav a:hover{color:#fff;background:rgba(44,176,255,.10)}
 
 @media(max-width:950px){nav{gap:2px}.brand{min-width:0}.brand-copy strong{font-size:16px}}
 @media(max-width:700px){.nav-wrap{height:68px}.brand-mark{width:40px;height:40px;border-radius:11px}.brand-mark img{width:39px;height:39px}.brand-copy strong{font-size:15px}.brand-copy small{font-size:8px}.brand{gap:8px}nav{border:0;border-radius:0;padding:18px 5%;background:#061426;box-shadow:0 18px 30px rgba(0,0,0,.25)}nav a{padding:11px 12px}.card{min-height:0}}
+
+/* Mobile responsiveness hardening */
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+img,svg,video,iframe{max-width:100%}
+button,input,select,textarea{max-width:100%}
+@media(max-width:700px){
+  .container{width:min(100% - 28px,1140px)}
+  .topline{font-size:10px}
+  .top-inner{justify-content:center;text-align:center}
+  .nav-wrap{padding:0 0;height:66px}
+  .brand{max-width:calc(100% - 54px);overflow:hidden}
+  .brand-copy{min-width:0}
+  .brand-copy strong,.brand-copy small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .hero{padding:55px 0 48px}
+  .hero-grid{gap:25px}
+  .hero-copy{width:100%}
+  .hero h1{font-size:clamp(34px,11vw,43px);letter-spacing:-1.7px}
+  .lead{font-size:14px;line-height:1.7}
+  .quick-points{gap:8px 12px;font-size:10px}
+  .profile-wrap{min-height:395px;width:100%;overflow:visible}
+  .profile-ring{width:min(82vw,320px);height:min(82vw,320px)}
+  .profile-card{width:100%;max-width:410px;transform:none;padding:9px;border-radius:20px}
+  .profile-photo{height:min(78vw,300px);min-height:220px}
+  .profile-info{padding:14px 6px 7px}
+  .profile-info h2{font-size:22px}
+  .profile-actions{flex-wrap:wrap}
+  .floating-badge{max-width:135px;white-space:normal}
+  .badge-one{right:-2px;top:18px}
+  .badge-two{left:-2px;bottom:12px}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .stats-grid div{padding:17px 10px;min-width:0}
+  .section{padding:58px 0}
+  .section-head h2,.contact-grid h2{font-size:32px;letter-spacing:-1px}
+  .cards,.portfolio-grid,.pricing-grid,.why-grid,.process-grid,.faq-grid{grid-template-columns:1fr;gap:13px}
+  .card,.price-card,.project-body,.process-card{padding:20px}
+  .project-visual{height:165px}
+  .browser{height:95px}
+  .browser b{font-size:17px;letter-spacing:2px}
+  .about-grid,.contact-grid{gap:30px}
+  .about-photo{padding:6px;border-radius:18px}
+  .about-photo img{height:min(105vw,390px)}
+  .about-copy h2{font-size:34px;letter-spacing:-1.2px}
+  .about-copy .big{font-size:17px}
+  .contact-list a{grid-template-columns:26px minmax(0,1fr);padding:13px 12px;word-break:break-word}
+  .contact-list strong{grid-column:2}
+  .form{padding:19px 15px}
+  .form input,.form select,.form textarea{font-size:16px}
+  .cta-strip{padding:42px 0}
+  .cta-inner{gap:18px}
+  .cta-inner h2{font-size:28px}
+  .footer-wrap{gap:18px}
+  .footer-links{flex-wrap:wrap;gap:10px 14px}
+  .float-wa{width:54px;height:54px;right:12px;bottom:12px;font-size:19px}
+}
+@media(max-width:380px){
+  .brand-copy strong{font-size:14px}
+  .brand-copy small{font-size:7px;letter-spacing:.8px}
+  .hero h1{font-size:34px}
+  .profile-photo{min-height:205px}
+  .stats-grid{grid-template-columns:1fr}
+  .stats-grid div{border-right:0!important}
+}
+
+
+/* Demo portfolio - mobile polish */
+.demo-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+.demo-project{display:flex;flex-direction:column;min-width:0}
+.demo-project .project-body{display:flex;flex-direction:column;flex:1}
+.demo-project .project-body p{flex:1}
+.demo-project .project-btn{align-self:flex-start;margin-top:16px;text-align:center}
+@media(max-width:950px){.demo-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){
+  .demo-grid{grid-template-columns:1fr}
+  .demo-project{width:100%;min-width:0}
+  .demo-project .project-visual{height:150px}
+  .demo-project .project-body{padding:18px}
+  .demo-project h3{font-size:21px;line-height:1.25}
+  .demo-project .project-body p{font-size:13px;line-height:1.65}
+  .demo-project .tags{display:flex;flex-wrap:wrap;gap:7px}
+  .demo-project .project-btn{width:100%;margin-top:14px;padding:12px 14px;font-size:13px}
+}
+@media(max-width:380px){.demo-project .project-visual{height:135px}.demo-project .project-body{padding:16px}.demo-project h3{font-size:19px}}
