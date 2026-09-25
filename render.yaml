@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: arjun-kewat-web-developer
+    runtime: static
+    buildCommand: "echo 'Static site - no build required'"
+    staticPublishPath: .
