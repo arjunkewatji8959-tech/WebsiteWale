@@ -1,27 +1,16 @@
-# Arjun Kewat — Web Developer Portfolio
+# Website Wale — Arjun Kewat Web Developer
 
-## GitHub + Render
-All website files are intentionally kept in this single folder. There are no subfolders.
-
-### Render Static Site
-- Build Command: `echo "Static site - no build required"`
-- Publish Directory: `.`
-- Root Directory: blank
-- Environment Variables: none required
-
-The enquiry form opens WhatsApp and does not require a backend.
+Flat, GitHub-ready static portfolio website.
 
 ## Files
-- index.html
-- 404.html
-- style.css
-- script.js
-- logo.svg
-- arjun-kewat-profile.jpg
-- robots.txt
-- render.yaml
-- README.md
+All website files are in the repository root. There are no subfolders.
 
-## Contact
-WhatsApp/Call: 89598 72715
-Email: arjunkewat867@gmail.com
+## Render Static Site
+- Branch: `main`
+- Root Directory: leave blank
+- Build Command: `echo "No build required"`
+- Publish Directory: `.`
+
+## Main assets
+- `websitewale-logo.png` — Website Wale / Arjun Kewat logo
+- `arjun-web-developer-office.jpg` — professional office profile image
