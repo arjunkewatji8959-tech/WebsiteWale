@@ -1,0 +1,17 @@
+WEBSITE WALE — GOOGLE SEO SETUP
+
+Live URL: https://websitewale.onrender.com/
+
+Included:
+- Google Search Console verification meta tag
+- Correct canonical URL
+- robots.txt
+- sitemap.xml
+- Googlebot indexing directives
+- Open Graph metadata
+- Twitter/social metadata
+
+Search Console:
+- Submit only: sitemap.xml
+- Do not submit / as a sitemap
+- Inspect the homepage and Request Indexing after deployment

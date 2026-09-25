@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# Add your final Render URL to the Sitemap line after deployment.
+Sitemap: https://websitewale.onrender.com/sitemap.xml
